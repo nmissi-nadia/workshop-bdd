@@ -1,7 +1,7 @@
 # workshop-bdd
 Système de gestion d'un centre médical
 
-Objectifs du workshop :
+### Objectifs du workshop :
 
 Comprendre les bases de données relationnelles et le langage SQL.
 
@@ -9,20 +9,20 @@ Apprendre à manipuler une base de données en utilisant SQL pour interagir avec
 
 Créer une base de données et travailler sur des cas pratiques de gestion de données dans un système médical.
 
-Programme du workshop
-Introduction à SQL et aux bases de données relationnelles
+### Programme du workshop
+# Introduction à SQL et aux bases de données relationnelles
 
-Qu'est-ce que SQL ?
+## Qu'est-ce que SQL ?
 
 SQL (Structured Query Language) est un langage standard utilisé pour interagir avec des bases de données relationnelles.
 
 Il permet de créer, manipuler et interroger les données stockées dans des bases de données.
 
-Pourquoi utiliser SQL ?
+## Pourquoi utiliser SQL ?
 
 SQL est essentiel pour interagir avec des systèmes de gestion de bases de données (SGBD) comme MySQL, PostgreSQL, ou SQLite.
 
-Structure d'une base de données relationnelle :
+## Structure d'une base de données relationnelle :
 
 Tables : Contiennent les données sous forme de lignes (enregistrements) et de colonnes (attributs).
 
@@ -31,11 +31,11 @@ Clés primaires et étrangères : Assurent l'intégrité des données et les rel
 Relations entre les utilisateurs : Les patients et les médecins sont considérés comme des utilisateurs, mais ils sont gérés dans des tables distinctes pour éviter les redondances.
 
 
-Contexte du Projet - Système de gestion d'un centre médical
+## Contexte du Projet - Système de gestion d'un centre médical
 
-Exemple de projet basé sur un centre médical :
+# Exemple de projet basé sur un centre médical :
 
-Tables principales à créer :
+### Tables principales à créer :
 
 Utilisateurs (pour patients et médecins) : id_utilisateur, nom, prenom, type_utilisateur (patient ou médecin).
 
@@ -44,11 +44,11 @@ Rendez-vous : id_rdv, id_patient, id_medecin, date_rdv, status (ex. confirmé, n
 Factures : id_facture, id_rdv, montant, date_facture.
 
 
-Création de la base de données et insertion des données
+### Création de la base de données et insertion des données
 
-Exercice 1 : Création de la base de données
+## Exercice 1 : Création de la base de données
 
-Créez les tables suivantes :
+# Créez les tables suivantes :
 
 Utilisateurs : Pour stocker les informations des patients et des médecins.
 
@@ -58,16 +58,16 @@ Factures : Pour suivre les paiements.
 
 Reliez les tables entre elles avec des clés primaires et étrangères.
 
-Exercice 2 : Insertion des données
+## Exercice 2 : Insertion des données
 
-Insérez au moins 5 exemples de rendez-vous avec les différents statuts (confirmé, non confirmé).
+# Insérez au moins 5 exemples de rendez-vous avec les différents statuts (confirmé, non confirmé).
 
 
 Requêtes SQL pour interroger les données
 
-Exercice 3 : Sélection de données avec jointures
+## Exercice 3 : Sélection de données avec jointures
 
-Écrivez des requêtes SQL pour :
+# Écrivez des requêtes SQL pour :
 
 Afficher tous les rendez-vous d'un patient particulier.
 
@@ -75,16 +75,16 @@ Afficher tous les rendez-vous confirmés ou non confirmés.
 
 Afficher le détail des rendez-vous avec les informations sur les utilisateurs et les médecins (utilisation de jointures).
 
-Exercice 4 : Mise à jour des données
+## Exercice 4 : Mise à jour des données
 
 Écrivez une requête SQL pour modifier le statut d'un rendez-vous, par exemple pour passer de "non confirmé" à "confirmé".
 
-Exercice 5 : Suppression des données
+## Exercice 5 : Suppression des données
 
 Écrivez une requête SQL pour supprimer un rendez-vous ou un utilisateur (patient ou médecin).
 
 
-Exercice 6 : Utilisation des fonctions d'agrégation
+## Exercice 6 : Utilisation des fonctions d'agrégation
 
 Calcul du nombre total de rendez-vous par patient :
 
